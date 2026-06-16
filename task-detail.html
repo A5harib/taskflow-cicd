@@ -15,16 +15,10 @@
             <a href="task-detail.html">Task Detail</a>
             <a href="about.html">About</a>
         </nav>
-        <div style="border: var(--border); padding: 1.5rem; margin-top: 1rem;">
-            <h2>Design Database Schema</h2>
-            <p><strong>Due:</strong> Oct 24, 2026 | <strong>Priority:</strong> High | <strong>Status:</strong> Pending</p>
-            <hr style="border: 1px solid var(--text); margin: 1rem 0;">
-            <p>Draft the initial Entity-Relationship diagram for the new user management module. Ensure constraints are clearly mapped out for user roles.</p>
-            <div style="margin-top: 2rem; display: flex; gap: 1rem;">
-                <button style="background: #28a745;">Mark Complete</button>
-                <button style="background: #dc3545;">Delete Task</button>
-            </div>
+        <div id="task-detail-container">
+            <!-- Populated dynamically via JS -->
         </div>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

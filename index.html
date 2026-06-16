@@ -15,7 +15,7 @@
             <a href="task-detail.html">Task Detail</a>
             <a href="about.html">About</a>
         </nav>
-        <h2>Welcome Back</h2>
+        <h2 id="dashboard-stats">Welcome Back</h2>
         <p>Here is the current status of your project workspace.</p>
         <table>
             <tr>
@@ -24,11 +24,17 @@
                 <th>Completed</th>
             </tr>
             <tr>
-                <td><strong>12</strong></td>
-                <td>8</td>
-                <td>4</td>
+                <td><strong id="total-tasks">12</strong></td>
+                <td><strong id="pending-tasks">8</strong></td>
+                <td><strong id="completed-tasks">4</strong></td>
             </tr>
         </table>
+
+        <h2 style="margin-top: 2.5rem;">High Priority & Upcoming Tasks</h2>
+        <ul id="upcoming-tasks" class="dashboard-list">
+            <!-- Populated dynamically via JS -->
+        </ul>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>
