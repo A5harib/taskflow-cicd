@@ -16,30 +16,24 @@
             <a href="about.html">About</a>
         </nav>
         <div style="margin-bottom: 1rem; display: flex; gap: 0.5rem;">
-            <button>All</button>
-            <button>Pending</button>
-            <button>Completed</button>
+            <button id="filter-all">All</button>
+            <button id="filter-pending">Pending</button>
+            <button id="filter-completed">Completed</button>
         </div>
-        <table>
-            <tr>
-                <th>Title</th>
-                <th>Due Date</th>
-                <th>Priority</th>
-                <th>Status</th>
-            </tr>
-            <tr>
-                <td><a href="task-detail.html" style="color: var(--text);">Design Database Schema</a></td>
-                <td>Oct 24, 2026</td>
-                <td><span class="badge">High</span></td>
-                <td>Pending</td>
-            </tr>
-            <tr>
-                <td><a href="task-detail.html" style="color: var(--text);">Update Dependencies</a></td>
-                <td>Oct 20, 2026</td>
-                <td><span class="badge">Low</span></td>
-                <td>Completed</td>
-            </tr>
+        <table id="task-list-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Due Date</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody id="task-list-body">
+                <!-- Tasks will be populated dynamically -->
+            </tbody>
         </table>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

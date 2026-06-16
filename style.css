@@ -91,3 +91,65 @@ th, td {
 
 th { background: var(--accent); color: var(--surface); text-transform: uppercase; }
 .badge { padding: 0.25rem 0.5rem; border: 2px solid var(--text); font-size: 0.875rem; font-weight: bold; }
+
+/* Dynamic UI Enhancements */
+.badge-high { background-color: #ffcccc; color: #cc0000; }
+.badge-medium { background-color: #fff4cc; color: #8a6d00; }
+.badge-low { background-color: #cce5ff; color: #004085; }
+
+.btn-active {
+  background: var(--text) !important;
+  color: var(--surface) !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+.nav-badge {
+  background: var(--accent);
+  color: var(--surface);
+  border: 2px solid var(--text);
+  font-size: 0.75rem;
+  padding: 0.1rem 0.35rem;
+  margin-left: 0.5rem;
+  font-weight: 800;
+  box-shadow: 1px 1px 0 var(--text);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 2rem;
+  font-style: italic;
+  color: #666;
+}
+
+.dashboard-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.dashboard-item {
+  border: var(--border);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  background: var(--surface);
+  box-shadow: 4px 4px 0 var(--text);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease;
+}
+
+.dashboard-item:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0 var(--text);
+}
+
+.error-container {
+  border: var(--border);
+  background: #ffcccc;
+  color: #cc0000;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
